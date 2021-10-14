@@ -1,5 +1,3 @@
-@echo off
-
 set SCRIPT_START=%DATE%__%TIME%
 :: Set Variables
 set LOG_FOLDER=github_sync_logs\%DATE%
