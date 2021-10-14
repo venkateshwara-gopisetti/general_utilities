@@ -8,7 +8,11 @@ echo %BORDER%
 set "wdir=%~1"
 echo Current Repository - %wdir%
 cd %wdir%
-git add . && git commit -am --no-edit
-git push --all origin
+git status &&(
+    git add . && git commit -am --no-edit
+    git push --all origin
+) || (
+    echo "Not a git directory"
+)
 cd ..
 GOTO :eof
