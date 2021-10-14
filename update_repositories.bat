@@ -12,7 +12,7 @@ git status &&(
     git add . && git commit -am --no-edit
     git push --all origin
 ) || (
-    echo "Not a git directory"
+    echo Not a git directory
 )
 cd ..
 GOTO :eof
