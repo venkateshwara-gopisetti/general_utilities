@@ -1,8 +1,10 @@
 @Echo Off
+set "BORDER=========================================================================="
 FOR /F %%G in ('dir /b/ad') DO (call :subroutine "%%G")
 GOTO :eof
 
 :subroutine
+echo %BORDER%
 set "wdir=%~1"
 echo Current Repository - %wdir%
 cd %wdir%
